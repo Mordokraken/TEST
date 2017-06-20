@@ -1,0 +1,2205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="632e885b-bc45-4b35-83fc-f35c8b294e05"
+  name="batleship" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6cb4602f-e5d3-4214-a2ca-3ccdfe57672d"
+        name="Board"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="15f9cfca-2402-48d4-ac0e-2bafe6ca8e0f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="65859ae7-1dc3-46c5-a067-1bed47278fec"
+              LastKnownName="Game"
+              LastKnownLocation="batleshep.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="3ef3db5b-4d16-4450-b3ca-26412daa8430"
+            name="HIGHT_BOARD"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="90ff6ee9-3bc1-4a6e-81ed-df68a005d058"
+            name="WIDTH_BOARD"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="46ab1968-7fa3-409f-bb4f-778c87d650f0"
+            name="posFree"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0567022b-703c-495c-85ad-1d2231477156"
+            name="cameOver"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3c7ed9f4-17e1-4004-b515-c3cfdc431e14"
+            name="createBoard"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b5211574-4c3f-4881-b49d-99ba2fb49405"
+            name="shot"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f84a4f71-89df-4d67-bc3d-e9195e0c0365"
+            name="computerShot"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0d51e064-69e2-4f20-9666-8d5ca2168316"
+            name="shotCheck"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="65859ae7-1dc3-46c5-a067-1bed47278fec"
+        name="Game"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="71d85cc2-cc15-4446-9432-3725564bcf26"
+            name="Board()"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="84c61526-2b52-4542-9751-179c97d8635b"
+            name="Ship()"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2fa755a0-8481-4b7e-99b6-02570e5380d6"
+            name="Enemy()"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e5185ce4-3dfd-4608-89e4-4278f2bd76cc"
+            name="vievBoard"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e370b25f-1dba-4071-9cff-0e8566f94714"
+        name="Ship"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="0dfd71a5-3432-4d6c-84fd-000e0bc30008"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6cb4602f-e5d3-4214-a2ca-3ccdfe57672d"
+              LastKnownName="Board"
+              LastKnownLocation="batleshep.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="3a47ebf2-a13f-4d37-9dd9-0d1f1f4c4150"
+            name="x_pos"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="216a0797-11bc-4679-a2af-53b1e02a533f"
+            name="y_pos"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0e3f9f9b-cd8f-4b62-b8af-4bb7547422ce"
+            name="figures"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="06e6fe58-74e3-4f04-b8f4-b5a1d3ad76db"
+            name="createShip"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="18994866-c99a-428b-8485-3f88681585b7"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="e638606f-291c-4d5e-afdf-70718a7a755f"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e4bac916-f5b6-4bb7-9f59-e03de684a9bb"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="batleshep.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3f478b33-3951-40be-9f16-6b27db36795c"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="batleshep.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8dd0bc5d-8e3b-4cc8-bd00-3e0ce0e098cb"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="batleshep.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3f478b33-3951-40be-9f16-6b27db36795c"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="00f03dc8-1c8d-4da7-9487-9719997300bd"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget
+            Id="608fc3ea-099c-4b4e-a218-4b31fee7d0b7"
+            name="LostFoundTarget3" />
+          <messageOccurrenceSpecification
+            Id="8dd0bc5d-8e3b-4cc8-bd00-3e0ce0e098cb"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e4bac916-f5b6-4bb7-9f59-e03de684a9bb"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="862a1066-b3c2-4c40-af11-dcc8c564f029"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="a8799147-82c4-443b-abda-1e07755c4426"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="51938529-5693-4035-92ee-f724e4806b17"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="batleshep.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="662ea3c6-411d-4884-9388-90c1c3fb4bd6"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="batleshep.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="62c9b04b-b7a4-4427-8b91-acb61eda788c"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a1ff4b15-bd47-4f2c-a086-41d3b51fd676"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="batleshep.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="662ea3c6-411d-4884-9388-90c1c3fb4bd6"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ba1ad6ca-1af5-43a1-b0cf-fea657fcfcaf"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f5ca7aa4-b715-46ae-933c-98449ae173b9"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="62c9b04b-b7a4-4427-8b91-acb61eda788c"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a1ff4b15-bd47-4f2c-a086-41d3b51fd676"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="58492a39-4da5-46ae-8a09-add77e984ade"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="51938529-5693-4035-92ee-f724e4806b17"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="99f4ca59-8890-463e-89d0-1b976b6bb3eb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="58ced4e5-49be-441e-8dae-993a8534ce10"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="94ad78b5-cf93-4441-ba6f-61e76d28187c"
+                LastKnownName="Ship"
+                LastKnownLocation="batleshep.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c8a961ee-317f-440a-8e7b-838a04cf9c2f"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="batleshep.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="2d2110fa-48c5-44c7-8b0f-14eb13326166"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="batleshep.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="53be561f-4f67-4f10-b135-dbc84a98ada4"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="batleshep.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="2d2110fa-48c5-44c7-8b0f-14eb13326166"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0a30017b-35e3-47e6-a569-5a93f3976db3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="94ad78b5-cf93-4441-ba6f-61e76d28187c"
+                LastKnownName="Ship"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="53be561f-4f67-4f10-b135-dbc84a98ada4"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="94ad78b5-cf93-4441-ba6f-61e76d28187c"
+                LastKnownName="Ship"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8487330a-5b45-4117-a992-c89202a3cf6d"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c8a961ee-317f-440a-8e7b-838a04cf9c2f"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e167b89c-3380-43c6-bf5f-0b638de32883"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="94ad78b5-cf93-4441-ba6f-61e76d28187c"
+                LastKnownName="Ship"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e589d1cd-a6ac-4ec3-83e1-336713645406"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="bdd8f956-b7cc-4383-9643-363e09f2b9c0"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="batleshep.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d1d2784f-2726-45db-ab73-7fafc921915c"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="batleshep.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="13251baa-4bd1-4663-bdee-87904bc05b67"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="60bcb99e-5169-45d4-8a3f-e4bcaecfc788"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="batleshep.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d1d2784f-2726-45db-ab73-7fafc921915c"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="de153dc3-bf6d-4d8c-a013-62bc4697bcbc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="13251baa-4bd1-4663-bdee-87904bc05b67"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="28c377e1-1d7e-4194-8b72-2ef96d5c7dbd"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="94ad78b5-cf93-4441-ba6f-61e76d28187c"
+                LastKnownName="Ship"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2d63165f-580c-41e3-81f7-44b284d3e3d4"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="94ad78b5-cf93-4441-ba6f-61e76d28187c"
+                LastKnownName="Ship"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="60bcb99e-5169-45d4-8a3f-e4bcaecfc788"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="bdd8f956-b7cc-4383-9643-363e09f2b9c0"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5417dc11-244b-4bb8-a071-490234ecc4cc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="7cbb07ed-1e9c-4fe1-bc79-4cd2ce56fd44"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="00c2f640-8d24-4cc5-926d-910c74b8ac4c"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="batleshep.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a6b8bf5e-208c-47c1-9f9b-a116e7dac080"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="batleshep.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="cf0af8ad-37a8-4265-a5f1-1aeb5e5134e3"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c0bc0d9c-337b-41e8-8a29-af464df012f9"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="batleshep.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a6b8bf5e-208c-47c1-9f9b-a116e7dac080"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="1ec2e04e-6ff9-49ce-a10f-7ae357bc3851"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cf0af8ad-37a8-4265-a5f1-1aeb5e5134e3"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0bcdc4df-d95f-438f-ab71-be7a2c14045d"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="cfcd8744-cc97-4819-b322-a34fd76c7b44"
+                LastKnownName="Enemy"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c0bc0d9c-337b-41e8-8a29-af464df012f9"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a4575faa-3071-460e-bc82-9cfdb463444a"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="cfcd8744-cc97-4819-b322-a34fd76c7b44"
+                LastKnownName="Enemy"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="00c2f640-8d24-4cc5-926d-910c74b8ac4c"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="128e8ff6-189a-4b9f-9c0b-e676d8477482"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="9b86d5a3-fb57-4e25-8c80-4a25e1cea4af"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b0066aaa-21d2-47a4-8d10-29896e299e96"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="batleshep.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="767eccfe-ebfb-493e-8a09-8e6989dc1e6a"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="batleshep.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0d3a8231-3799-47aa-9584-6b5048605d26"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="batleshep.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="767eccfe-ebfb-493e-8a09-8e6989dc1e6a"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6392b195-d557-45c1-bde3-8bbbe4acdbf5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="775a4064-51f7-44b1-a117-a27e855ab9e6"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0d3a8231-3799-47aa-9584-6b5048605d26"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b0066aaa-21d2-47a4-8d10-29896e299e96"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ceb63777-18de-4588-8fe5-3d986a493208"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="887d77b0-cef9-4bc6-a307-fa1084f3f227"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="791d975e-8c30-46e0-b4d8-5ba71a6c5385"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="batleshep.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4ed55399-7c87-438f-83d2-ac0414dcea13"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="batleshep.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6b3ff8dd-4754-4d8b-a78e-da290dac7870"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b3579a20-1861-4ca1-aa82-36fdca7982b7"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="batleshep.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4ed55399-7c87-438f-83d2-ac0414dcea13"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d54900e7-4e93-4e2e-9c59-728b8c9ce042"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6b3ff8dd-4754-4d8b-a78e-da290dac7870"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d8212110-1392-4718-a813-539980c12c9d"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="410a73b9-1edc-4989-be4a-0766e85c75b4"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b3579a20-1861-4ca1-aa82-36fdca7982b7"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="791d975e-8c30-46e0-b4d8-5ba71a6c5385"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="98f796ad-611e-42e5-934e-7c297934993a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e57b22ee-1d39-40c8-8660-1f035c29953f"
+            name="BehaviorExecutionSpecification11">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="633e2b7c-1b41-4ae9-964d-201eea8497b4"
+                LastKnownName="Score"
+                LastKnownLocation="batleshep.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="fa427229-2331-49cf-b4d7-63fc5b18d83e"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="batleshep.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ddf87a32-fac9-4378-9ff5-cd36175cd3cc"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="batleshep.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="da363df6-5453-4804-b4c9-ca9c2dff513d"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d3a3b203-7b9b-495b-aace-a1985f509638"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="batleshep.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ddf87a32-fac9-4378-9ff5-cd36175cd3cc"
+            name="ExecutionOccurrenceSpecification21">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="483840d4-7793-47e0-a9c9-1c0aa59de1b7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="633e2b7c-1b41-4ae9-964d-201eea8497b4"
+                LastKnownName="Score"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="da363df6-5453-4804-b4c9-ca9c2dff513d"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="633e2b7c-1b41-4ae9-964d-201eea8497b4"
+                LastKnownName="Score"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6beecf85-ec23-42ff-b4f7-695597270622"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d3a3b203-7b9b-495b-aace-a1985f509638"
+            name="MessageOccurrenceSpecification34">
+            <covered>
+              <lifelineMoniker
+                Id="633e2b7c-1b41-4ae9-964d-201eea8497b4"
+                LastKnownName="Score"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="049d44f8-b5bf-4c66-9d2c-630ff9686840"
+            name="MessageOccurrenceSpecification35">
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="fa427229-2331-49cf-b4d7-63fc5b18d83e"
+            name="ExecutionOccurrenceSpecification22">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="638571f0-7db2-4cea-82a0-97afcad04384"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="633e2b7c-1b41-4ae9-964d-201eea8497b4"
+                LastKnownName="Score"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1ab99ef6-6fb6-4e6d-89e0-77a27cc7b51a"
+            name="BehaviorExecutionSpecification10">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="dc177809-c9c2-4ddf-a1e3-4a8f17411ff4"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="batleshep.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="c8651685-f305-45b0-8062-d9da6c66ede6"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="batleshep.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="5c41f792-35ec-4776-83a2-4c8d497667c1"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="batleshep.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="c8651685-f305-45b0-8062-d9da6c66ede6"
+            name="ExecutionOccurrenceSpecification19">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9964c25d-0418-4ad6-8755-12a51c08f66d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5c41f792-35ec-4776-83a2-4c8d497667c1"
+            name="MessageOccurrenceSpecification31">
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a09dc0b1-a9ce-40ef-988d-2be793b99bc2"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="cfcd8744-cc97-4819-b322-a34fd76c7b44"
+                LastKnownName="Enemy"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="dc177809-c9c2-4ddf-a1e3-4a8f17411ff4"
+            name="ExecutionOccurrenceSpecification20">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9bfa491e-83ab-45ad-9e0a-0d28fa0d36cf"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="batleshep.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="75d8ca16-49aa-4c35-8d76-a91224255812"
+            name="Game"
+            isActor="false"
+            lifelineDisplayName="Game">
+            <represents>
+              <propertyMoniker
+                Id="4d997c33-0e37-4080-98e0-e0eaf749977c"
+                LastKnownLocation="batleshep.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="3f478b33-3951-40be-9f16-6b27db36795c"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e4bac916-f5b6-4bb7-9f59-e03de684a9bb"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f5ca7aa4-b715-46ae-933c-98449ae173b9"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="58492a39-4da5-46ae-8a09-add77e984ade"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8487330a-5b45-4117-a992-c89202a3cf6d"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d1d2784f-2726-45db-ab73-7fafc921915c"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="bdd8f956-b7cc-4383-9643-363e09f2b9c0"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="775a4064-51f7-44b1-a117-a27e855ab9e6"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4ed55399-7c87-438f-83d2-ac0414dcea13"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="791d975e-8c30-46e0-b4d8-5ba71a6c5385"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="batleshep.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="891b923b-aa2e-4405-be87-28a2b1b7d873"
+            name="Board"
+            isActor="false"
+            lifelineDisplayName="Board">
+            <represents>
+              <propertyMoniker
+                Id="ecb0c300-18e1-4f42-9cec-b9c10f131b26"
+                LastKnownLocation="batleshep.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="662ea3c6-411d-4884-9388-90c1c3fb4bd6"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="51938529-5693-4035-92ee-f724e4806b17"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a6b8bf5e-208c-47c1-9f9b-a116e7dac080"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="00c2f640-8d24-4cc5-926d-910c74b8ac4c"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="767eccfe-ebfb-493e-8a09-8e6989dc1e6a"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b0066aaa-21d2-47a4-8d10-29896e299e96"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d8212110-1392-4718-a813-539980c12c9d"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="410a73b9-1edc-4989-be4a-0766e85c75b4"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6beecf85-ec23-42ff-b4f7-695597270622"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="049d44f8-b5bf-4c66-9d2c-630ff9686840"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c8651685-f305-45b0-8062-d9da6c66ede6"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="dc177809-c9c2-4ddf-a1e3-4a8f17411ff4"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="batleshep.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="94ad78b5-cf93-4441-ba6f-61e76d28187c"
+            name="Ship"
+            isActor="false"
+            lifelineDisplayName="Ship">
+            <represents>
+              <propertyMoniker
+                Id="ef65c1a3-e48b-4aef-b4b5-6cd6153562d8"
+                LastKnownLocation="batleshep.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="2d2110fa-48c5-44c7-8b0f-14eb13326166"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c8a961ee-317f-440a-8e7b-838a04cf9c2f"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="28c377e1-1d7e-4194-8b72-2ef96d5c7dbd"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2d63165f-580c-41e3-81f7-44b284d3e3d4"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="batleshep.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="cfcd8744-cc97-4819-b322-a34fd76c7b44"
+            name="Enemy"
+            isActor="false"
+            lifelineDisplayName="Enemy">
+            <represents>
+              <propertyMoniker
+                Id="d9436993-b0a2-48d9-a8f4-6d0bde120428"
+                LastKnownLocation="batleshep.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0bcdc4df-d95f-438f-ab71-be7a2c14045d"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a4575faa-3071-460e-bc82-9cfdb463444a"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="batleshep.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a09dc0b1-a9ce-40ef-988d-2be793b99bc2"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="batleshep.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="633e2b7c-1b41-4ae9-964d-201eea8497b4"
+            name="Score"
+            isActor="false"
+            lifelineDisplayName="Score">
+            <represents>
+              <propertyMoniker
+                Id="b831d3b4-f20a-4d6c-9b4c-e57d27616311"
+                LastKnownLocation="batleshep.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="ddf87a32-fac9-4378-9ff5-cd36175cd3cc"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="batleshep.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="fa427229-2331-49cf-b4d7-63fc5b18d83e"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="batleshep.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="0369018f-db26-44e2-973b-881ee3a9dd98"
+            name="main"
+            messageKind="Found"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <lostFoundTargetMoniker
+                Id="608fc3ea-099c-4b4e-a218-4b31fee7d0b7"
+                LastKnownName="LostFoundTarget3"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8dd0bc5d-8e3b-4cc8-bd00-3e0ce0e098cb"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="aa11ee64-b2fc-429a-9582-d35d5db053a1"
+            name="createBoard"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f5ca7aa4-b715-46ae-933c-98449ae173b9"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="62c9b04b-b7a4-4427-8b91-acb61eda788c"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="bf4e14fd-c84c-4401-8ce2-b268393a6131"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a1ff4b15-bd47-4f2c-a086-41d3b51fd676"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="58492a39-4da5-46ae-8a09-add77e984ade"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ef5ff318-af5d-4722-9b69-897de8e8fe9c"
+            name="EnterShipCoordinate"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8487330a-5b45-4117-a992-c89202a3cf6d"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="53be561f-4f67-4f10-b135-dbc84a98ada4"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="b75f4a6f-af35-41e8-95ab-4559493935e5"
+            name="CreateShip()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="28c377e1-1d7e-4194-8b72-2ef96d5c7dbd"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="13251baa-4bd1-4663-bdee-87904bc05b67"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c67e5adb-e86f-41d7-95cd-f24925768eff"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="60bcb99e-5169-45d4-8a3f-e4bcaecfc788"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2d63165f-580c-41e3-81f7-44b284d3e3d4"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2b4e2cf9-fee1-454c-8dad-c1d86ff15ce5"
+            name="CreateEnemyShip"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0bcdc4df-d95f-438f-ab71-be7a2c14045d"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cf0af8ad-37a8-4265-a5f1-1aeb5e5134e3"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d0389158-c9ae-49c4-9d5b-fac009d92a0b"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c0bc0d9c-337b-41e8-8a29-af464df012f9"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a4575faa-3071-460e-bc82-9cfdb463444a"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="fc7251c9-922a-4e8c-8f04-6289086227f4"
+            name="Shot()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="775a4064-51f7-44b1-a117-a27e855ab9e6"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0d3a8231-3799-47aa-9584-6b5048605d26"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="be9e997c-72c6-4852-9b4f-40b36d4de350"
+            name="shotCheck()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d8212110-1392-4718-a813-539980c12c9d"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6b3ff8dd-4754-4d8b-a78e-da290dac7870"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="431c8276-6b2b-437e-983b-a341c2bb73e7"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b3579a20-1861-4ca1-aa82-36fdca7982b7"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="410a73b9-1edc-4989-be4a-0766e85c75b4"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f549db77-4ebe-4cda-8951-76ca6c85cc79"
+            name="score()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6beecf85-ec23-42ff-b4f7-695597270622"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="da363df6-5453-4804-b4c9-ca9c2dff513d"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9188c951-b541-463b-82a8-0544709b290a"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d3a3b203-7b9b-495b-aace-a1985f509638"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="049d44f8-b5bf-4c66-9d2c-630ff9686840"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f540a5f8-ed25-4d08-85b5-b7b4b43a1acf"
+            name="shot()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a09dc0b1-a9ce-40ef-988d-2be793b99bc2"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="batleshep.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5c41f792-35ec-4776-83a2-4c8d497667c1"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="batleshep.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="4d997c33-0e37-4080-98e0-e0eaf749977c"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="65859ae7-1dc3-46c5-a067-1bed47278fec"
+                LastKnownName="Game"
+                LastKnownLocation="batleshep.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ecb0c300-18e1-4f42-9cec-b9c10f131b26"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="6cb4602f-e5d3-4214-a2ca-3ccdfe57672d"
+                LastKnownName="Board"
+                LastKnownLocation="batleshep.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ef65c1a3-e48b-4aef-b4b5-6cd6153562d8"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="e370b25f-1dba-4071-9cff-0e8566f94714"
+                LastKnownName="Ship"
+                LastKnownLocation="batleshep.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d9436993-b0a2-48d9-a8f4-6d0bde120428"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="c36e3086-e08e-4000-840c-8e162f425131"
+                LastKnownName="Enemy"
+                LastKnownLocation="batleshep.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b831d3b4-f20a-4d6c-9b4c-e57d27616311"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="ea34a5e1-07a0-41a2-a8cc-75c17c742ab4"
+                LastKnownName="Score"
+                LastKnownLocation="batleshep.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ba1ad6ca-1af5-43a1-b0cf-fea657fcfcaf"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="99f4ca59-8890-463e-89d0-1b976b6bb3eb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="00f03dc8-1c8d-4da7-9487-9719997300bd"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="862a1066-b3c2-4c40-af11-dcc8c564f029"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="a47fd6fe-edc7-44e3-8d4d-b5ec9db62460"
+        name="user"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e3357454-c00c-4460-85b4-d86fe18d60ce"
+            isDerived="false"
+            sourceEndRoleName="user"
+            targetEndRoleName="UseCase2"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="072d0611-ae7b-4485-9ed9-91b7cee00ad1"
+              LastKnownName="Start the program"
+              LastKnownLocation="batleshep.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8fe527d8-9121-4f57-9581-05915acc4cca"
+                  name="user"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="771e8159-2e3b-4be2-a9c4-f268391b4221"
+                  name="UseCase2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="b5473fae-5d40-4a1e-a397-ef81340d49b3"
+        name="batleshipgame"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="072d0611-ae7b-4485-9ed9-91b7cee00ad1"
+        name="Start the program"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c00cc4ae-953f-40fb-9510-f792c99fd847"
+            isDerived="false"
+            sourceEndRoleName="Start the program"
+            targetEndRoleName="Board generation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="384ef400-fdbe-4732-b722-af4245246699"
+              LastKnownName="Board generation"
+              LastKnownLocation="batleshep.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="caa7c075-eb48-47cf-a76b-c0b1dabed3f2"
+                  name="Start the program"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba97b6ab-8d2f-45ad-aefc-623e0259dd10"
+                  name="Board generation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="b5473fae-5d40-4a1e-a397-ef81340d49b3"
+            LastKnownName="batleshipgame"
+            LastKnownLocation="batleshep.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="384ef400-fdbe-4732-b722-af4245246699"
+        name="Board generation"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9bc5710c-a1f3-4e19-bbbb-df0a035ae6c3"
+            isDerived="false"
+            sourceEndRoleName="Board generation"
+            targetEndRoleName="Ship position input"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e7f1551e-cd47-437d-8439-04bead2330e5"
+              LastKnownName="Ship position input"
+              LastKnownLocation="batleshep.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d3adc39-fc24-468d-ac02-7c85a912d4ca"
+                  name="Board generation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a75f1b2-bc51-4ca0-8ccd-1f6296ca3792"
+                  name="Ship position input"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="b5473fae-5d40-4a1e-a397-ef81340d49b3"
+            LastKnownName="batleshipgame"
+            LastKnownLocation="batleshep.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e7f1551e-cd47-437d-8439-04bead2330e5"
+        name="Ship position input"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ab963e78-97ab-44ac-a067-53dab1fb11a2"
+            isDerived="false"
+            sourceEndRoleName="Ship position input"
+            targetEndRoleName="start game"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2d9e6c18-7d48-4c86-9965-932f3d7c908e"
+              LastKnownName="start game"
+              LastKnownLocation="batleshep.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e3d1137f-599c-4b79-b995-d03cdcc605f9"
+                  name="Ship position input"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f506e579-36ef-4d24-8a00-962adef3f740"
+                  name="start game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="b5473fae-5d40-4a1e-a397-ef81340d49b3"
+            LastKnownName="batleshipgame"
+            LastKnownLocation="batleshep.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2d9e6c18-7d48-4c86-9965-932f3d7c908e"
+        name="start game"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="b5473fae-5d40-4a1e-a397-ef81340d49b3"
+            LastKnownName="batleshipgame"
+            LastKnownLocation="batleshep.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="71459605-4cbf-4b7b-97c6-45a6dfc911ba"
+        name="Artificial Intelligence"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="35ec4d53-8fdc-45d9-9d68-dcceae439fae"
+            isDerived="false"
+            sourceEndRoleName="Artificial Intelligence"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4e92b3bc-5368-4431-b20a-69cdbca46a63"
+              LastKnownName="Random generation of ships"
+              LastKnownLocation="batleshep.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1fe846e3-b421-483c-bafd-fdb3ae8c9c19"
+                  name="Artificial Intelligence"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b9df3b11-a47c-44c0-89e3-e809b4cf5e21"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="26ea9f32-9a4f-4b94-b86f-b4cbaf85bec5"
+            isDerived="false"
+            sourceEndRoleName="Artificial Intelligence"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0f60f5ae-31a2-48d3-aa4d-c00b2acec35a"
+              LastKnownName="&#xD;&#xA;Random shot generation"
+              LastKnownLocation="batleshep.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50d1630c-317e-4ace-9734-7d339befc111"
+                  name="Artificial Intelligence"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="40b562ea-4be0-4544-8e9a-6ce9f88de403"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4e92b3bc-5368-4431-b20a-69cdbca46a63"
+        name="Random generation of ships"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="b5473fae-5d40-4a1e-a397-ef81340d49b3"
+            LastKnownName="batleshipgame"
+            LastKnownLocation="batleshep.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0f60f5ae-31a2-48d3-aa4d-c00b2acec35a"
+        name="&#xD;&#xA;Random shot generation"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="b5473fae-5d40-4a1e-a397-ef81340d49b3"
+            LastKnownName="batleshipgame"
+            LastKnownLocation="batleshep.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="de153dc3-bf6d-4d8c-a013-62bc4697bcbc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5417dc11-244b-4bb8-a071-490234ecc4cc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0a30017b-35e3-47e6-a569-5a93f3976db3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e167b89c-3380-43c6-bf5f-0b638de32883"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c36e3086-e08e-4000-840c-8e162f425131"
+        name="Enemy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f519156d-8fb0-4af9-a096-9954e5713568"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6cb4602f-e5d3-4214-a2ca-3ccdfe57672d"
+              LastKnownName="Board"
+              LastKnownLocation="batleshep.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="fb520485-d514-4be7-bcab-6d26d4a44841"
+            name="enemy"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5007bf43-ed42-4dfe-9990-1d7b280c8572"
+            name="createEnemyShip"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1ec2e04e-6ff9-49ce-a10f-7ae357bc3851"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="128e8ff6-189a-4b9f-9c0b-e676d8477482"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6392b195-d557-45c1-bde3-8bbbe4acdbf5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ceb63777-18de-4588-8fe5-3d986a493208"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9964c25d-0418-4ad6-8755-12a51c08f66d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9bfa491e-83ab-45ad-9e0a-0d28fa0d36cf"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d54900e7-4e93-4e2e-9c59-728b8c9ce042"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="98f796ad-611e-42e5-934e-7c297934993a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ea34a5e1-07a0-41a2-a8cc-75c17c742ab4"
+        name="Score"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b2f1907f-be7e-4499-9f53-ead5e2d6e3d5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="65859ae7-1dc3-46c5-a067-1bed47278fec"
+              LastKnownName="Game"
+              LastKnownLocation="batleshep.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="633f2ac6-e48e-4ff0-80ad-2e5dabc1b414"
+            name="score"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6dec0f95-0aae-4ab8-8f73-6e9dc99005fe"
+            name="score"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="483840d4-7793-47e0-a9c9-1c0aa59de1b7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="638571f0-7db2-4cea-82a0-97afcad04384"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

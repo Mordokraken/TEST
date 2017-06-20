@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="ea5dae6e-88e7-40a6-8ccd-c7692c31adf8" name="UMLUseCaseDiagram1" linkedPackageId="708154a9-93f5-437c-b04f-4e94c200a90c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="2f764606-3b08-44ac-a818-3e3b04c6aeea" name="user" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a47fd6fe-edc7-44e3-8d4d-b5ec9db62460" />
+        <targetEnds>
+          <association Id="d838913a-7c8d-4022-87d6-70e5b37ac302" isDerived="false" sourceEndRoleName="user" targetEndRoleName="UseCase2" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0abc279d-b480-4bf2-821c-1ad05c2f762e" LastKnownName="Start the program" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2ef14484-c6b0-4442-b5a0-5b962e1222df" name="user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8fe527d8-9121-4f57-9581-05915acc4cca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="41a4589b-f193-4d5d-a17d-90b43164b577" name="UseCase2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="771e8159-2e3b-4be2-a9c4-f268391b4221" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e3357454-c00c-4460-85b4-d86fe18d60ce" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="9ef5d589-d3a4-47c8-8845-7737f85aa59c" name="batleshipgame" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b5473fae-5d40-4a1e-a397-ef81340d49b3" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="0abc279d-b480-4bf2-821c-1ad05c2f762e" name="Start the program" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="072d0611-ae7b-4485-9ed9-91b7cee00ad1" />
+        <targetEnds>
+          <association Id="3da280f4-0bb2-4b90-b86f-3fe4581472ce" isDerived="false" sourceEndRoleName="Start the program" targetEndRoleName="Board generation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2701ce9c-a02e-4b66-822b-9ccaffdc300b" LastKnownName="Board generation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8bf66166-4474-46f5-bd73-15d35710ca98" name="Start the program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="caa7c075-eb48-47cf-a76b-c0b1dabed3f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6a08ce0e-c743-47de-a9f8-4d5168de1962" name="Board generation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ba97b6ab-8d2f-45ad-aefc-623e0259dd10" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c00cc4ae-953f-40fb-9510-f792c99fd847" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="9ef5d589-d3a4-47c8-8845-7737f85aa59c" LastKnownName="batleshipgame" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2701ce9c-a02e-4b66-822b-9ccaffdc300b" name="Board generation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="384ef400-fdbe-4732-b722-af4245246699" />
+        <targetEnds>
+          <association Id="d2f1f3ff-7602-434c-aa24-4d1993881b43" isDerived="false" sourceEndRoleName="Board generation" targetEndRoleName="Ship position input" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b5fffeae-820e-4006-ab3f-6d07117c1d53" LastKnownName="Ship position input" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f225f062-3fa9-41b7-9362-f7696e7b283b" name="Board generation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1d3adc39-fc24-468d-ac02-7c85a912d4ca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f335c0c-9203-45d0-8269-8709ed32e3a3" name="Ship position input" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5a75f1b2-bc51-4ca0-8ccd-1f6296ca3792" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9bc5710c-a1f3-4e19-bbbb-df0a035ae6c3" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="9ef5d589-d3a4-47c8-8845-7737f85aa59c" LastKnownName="batleshipgame" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b5fffeae-820e-4006-ab3f-6d07117c1d53" name="Ship position input" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e7f1551e-cd47-437d-8439-04bead2330e5" />
+        <targetEnds>
+          <association Id="5f65fc9e-29d0-4f57-accd-c286d18b4615" isDerived="false" sourceEndRoleName="Ship position input" targetEndRoleName="start game" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="866a0d3d-8735-4cc8-ae48-a06643fb51e6" LastKnownName="start game" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c3853f6e-8cf6-42f7-8c41-99db3123d822" name="Ship position input" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e3d1137f-599c-4b79-b995-d03cdcc605f9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="73c5c073-dca2-4e13-a652-d3001d9a6f48" name="start game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f506e579-36ef-4d24-8a00-962adef3f740" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ab963e78-97ab-44ac-a067-53dab1fb11a2" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="9ef5d589-d3a4-47c8-8845-7737f85aa59c" LastKnownName="batleshipgame" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="866a0d3d-8735-4cc8-ae48-a06643fb51e6" name="start game" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2d9e6c18-7d48-4c86-9965-932f3d7c908e" />
+        <subjects>
+          <subsystemMoniker Id="9ef5d589-d3a4-47c8-8845-7737f85aa59c" LastKnownName="batleshipgame" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="6a6362e2-7837-4b9a-abea-4373e984f19a" name="Artificial Intelligence" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="71459605-4cbf-4b7b-97c6-45a6dfc911ba" />
+        <targetEnds>
+          <association Id="b157cf63-8cc7-4c8b-b75b-da6b6b337bc9" isDerived="false" sourceEndRoleName="Artificial Intelligence" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="db87188e-d918-4bb8-b753-b6fc7d781f11" LastKnownName="Random generation of ships" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83d23af6-d03c-4ec0-983e-54629e7d6512" name="Artificial Intelligence" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1fe846e3-b421-483c-bafd-fdb3ae8c9c19" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f433b61b-0efb-42c7-a639-54e5376337c4" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b9df3b11-a47c-44c0-89e3-e809b4cf5e21" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="35ec4d53-8fdc-45d9-9d68-dcceae439fae" />
+          </association>
+          <association Id="bb348dc5-80e0-473d-8677-4c83e3804f93" isDerived="false" sourceEndRoleName="Artificial Intelligence" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="94762216-4013-46d5-aa19-cf49a1bf8afc" LastKnownName="&#xD;&#xA;Random shot generation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd72b0f7-8800-4200-b2d3-52f2f7383490" name="Artificial Intelligence" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="50d1630c-317e-4ace-9734-7d339befc111" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e58c9c95-c0c7-4975-8709-d9863f2cd94f" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="40b562ea-4be0-4544-8e9a-6ce9f88de403" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="26ea9f32-9a4f-4b94-b86f-b4cbaf85bec5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="db87188e-d918-4bb8-b753-b6fc7d781f11" name="Random generation of ships" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4e92b3bc-5368-4431-b20a-69cdbca46a63" />
+        <subjects>
+          <subsystemMoniker Id="9ef5d589-d3a4-47c8-8845-7737f85aa59c" LastKnownName="batleshipgame" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="94762216-4013-46d5-aa19-cf49a1bf8afc" name="&#xD;&#xA;Random shot generation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f60f5ae-31a2-48d3-aa4d-c00b2acec35a" />
+        <subjects>
+          <subsystemMoniker Id="9ef5d589-d3a4-47c8-8845-7737f85aa59c" LastKnownName="batleshipgame" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="708154a9-93f5-437c-b04f-4e94c200a90c" name="batleship">
+    <elementDefinition Id="632e885b-bc45-4b35-83fc-f35c8b294e05" />
+    <profileInstances>
+      <packageHasProfileInstances Id="88349bc1-e93b-4a39-8b2d-1a9933375686">
+        <profileInstance Id="2cda6933-9d3f-44d5-a2bf-05e07915301e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c3689523-05e9-47b0-b765-8d96f2216ff2">
+        <profileInstance Id="53e95574-c573-41cf-b209-1a044b25eb33" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="f451c8cc-5f12-4b90-9b61-2d1d79e7fb88" name="UMLClassDiagram1" linkedPackageId="a15c2fb1-02b8-4b3c-85ab-e29c031bdbfc" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9e914905-c811-4c17-a96f-fc87cbf73229" name="Game" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="65859ae7-1dc3-46c5-a067-1bed47278fec" />
+        <ownedAttributesInternal>
+          <property Id="513672d4-897e-490b-b48d-72bc72267228" name="Board()" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="71d85cc2-cc15-4446-9432-3725564bcf26" />
+          </property>
+          <property Id="6d2ae2fc-e1a1-4f62-a68f-755b1234467e" name="Ship()" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="84c61526-2b52-4542-9751-179c97d8635b" />
+          </property>
+          <property Id="e29cfefb-7aed-4b28-9511-ab6ed9cf49bb" name="Enemy()" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2fa755a0-8481-4b7e-99b6-02570e5380d6" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a09d55d0-2a8f-4b6f-8a56-4670360d870a" name="vievBoard" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e5185ce4-3dfd-4608-89e4-4278f2bd76cc" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4dd4d838-1e2a-4d74-8a3e-11f209a5ba9d" name="Board" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6cb4602f-e5d3-4214-a2ca-3ccdfe57672d" />
+        <generalsInternal>
+          <generalization Id="0fa4c8a0-4b85-4abf-922f-455f9f307c70" isSubstitutable="false">
+            <classMoniker Id="9e914905-c811-4c17-a96f-fc87cbf73229" LastKnownName="Game" />
+            <elementDefinition Id="15f9cfca-2402-48d4-ac0e-2bafe6ca8e0f" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="7dc6d948-9a47-418c-bc39-07018d9b07df" name="HIGHT_BOARD" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3ef3db5b-4d16-4450-b3ca-26412daa8430" />
+          </property>
+          <property Id="2cd2adff-0963-4b17-b15e-36a0f2602367" name="WIDTH_BOARD" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="90ff6ee9-3bc1-4a6e-81ed-df68a005d058" />
+          </property>
+          <property Id="579cb98a-0220-4329-b701-84eec536d5ff" name="posFree" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="46ab1968-7fa3-409f-bb4f-778c87d650f0" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="bc7cd9a6-b532-430b-af19-f65bbd0f4c3b" name="cameOver" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0567022b-703c-495c-85ad-1d2231477156" />
+          </operation>
+          <operation Id="55ed7ae2-4bbe-4352-b324-e7fa7f1d0824" name="createBoard" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3c7ed9f4-17e1-4004-b515-c3cfdc431e14" />
+          </operation>
+          <operation Id="0dfe1973-74b2-410d-8c02-97f4c697a0ce" name="shot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b5211574-4c3f-4881-b49d-99ba2fb49405" />
+          </operation>
+          <operation Id="9e5bf05e-8b84-4a91-b843-2034f255abf9" name="computerShot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f84a4f71-89df-4d67-bc3d-e9195e0c0365" />
+          </operation>
+          <operation Id="c23d07ce-4033-4ceb-9a92-a5b02fe0dedd" name="shotCheck" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0d51e064-69e2-4f20-9666-8d5ca2168316" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="695c65fb-60fc-4c75-a38b-928951e986c3" name="Ship" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e370b25f-1dba-4071-9cff-0e8566f94714" />
+        <generalsInternal>
+          <generalization Id="1d0c10fd-4b3d-433c-88b3-aba8c3cdc05e" isSubstitutable="false">
+            <classMoniker Id="4dd4d838-1e2a-4d74-8a3e-11f209a5ba9d" LastKnownName="Board" />
+            <elementDefinition Id="0dfd71a5-3432-4d6c-84fd-000e0bc30008" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="3d33b00a-e0e4-4c1e-9c3c-1adbd393ef1d" name="x_pos" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3a47ebf2-a13f-4d37-9dd9-0d1f1f4c4150" />
+          </property>
+          <property Id="2c7a3e25-b9d3-4995-b50f-ced3235579fb" name="y_pos" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="216a0797-11bc-4679-a2af-53b1e02a533f" />
+          </property>
+          <property Id="8c8c8feb-b69c-42e0-9c51-c07f06c416a7" name="figures" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0e3f9f9b-cd8f-4b62-b8af-4bb7547422ce" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e4d1a690-b1f5-489c-9879-e24431bf5385" name="createShip" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="06e6fe58-74e3-4f04-b8f4-b5a1d3ad76db" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a11cb456-3665-47a2-9bb8-3468f6a1960c" name="Enemy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c36e3086-e08e-4000-840c-8e162f425131" />
+        <generalsInternal>
+          <generalization Id="f6ee1663-e3af-4f85-ae56-b892fe921ed3" isSubstitutable="false">
+            <classMoniker Id="4dd4d838-1e2a-4d74-8a3e-11f209a5ba9d" LastKnownName="Board" />
+            <elementDefinition Id="f519156d-8fb0-4af9-a096-9954e5713568" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="33c6a524-8ebd-47b3-8838-ff15beb7a39d" name="enemy" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fb520485-d514-4be7-bcab-6d26d4a44841" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="702753fd-bd77-4ab0-9232-6a8a9b99bf3a" name="createEnemyShip" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5007bf43-ed42-4dfe-9990-1d7b280c8572" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8143d241-a5b1-4127-a2c3-7b6fb664de9a" name="Score" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ea34a5e1-07a0-41a2-a8cc-75c17c742ab4" />
+        <generalsInternal>
+          <generalization Id="c2820970-ec88-4fe6-868e-be4f876aa538" isSubstitutable="false">
+            <classMoniker Id="9e914905-c811-4c17-a96f-fc87cbf73229" LastKnownName="Game" />
+            <elementDefinition Id="b2f1907f-be7e-4499-9f53-ead5e2d6e3d5" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="a9f5c74d-d78c-4322-9a24-3f2c03743802" name="score" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="633f2ac6-e48e-4ff0-80ad-2e5dabc1b414" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ea9b8f9a-74ce-4da0-9f9a-64bfc842d700" name="score" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6dec0f95-0aae-4ab8-8f73-6e9dc99005fe" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a15c2fb1-02b8-4b3c-85ab-e29c031bdbfc" name="batleship">
+    <elementDefinition Id="632e885b-bc45-4b35-83fc-f35c8b294e05" />
+    <profileInstances>
+      <packageHasProfileInstances Id="34989dd0-00aa-4d6b-b16f-997878909139">
+        <profileInstance Id="2781196f-8b70-4a40-b571-4eca8e6e4a50" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="37a785ef-5c78-4a7c-a2d8-d96cfe5937a6">
+        <profileInstance Id="40e876eb-06f4-4488-a74c-198f6500cda2" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
